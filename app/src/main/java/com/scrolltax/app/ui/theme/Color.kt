@@ -1,0 +1,28 @@
+package com.scrolltax.app.ui.theme
+
+import androidx.compose.ui.graphics.Color
+
+val Primary = Color(0xFFFF6B35)
+val PrimaryDark = Color(0xFFE55A2B)
+val PrimaryLight = Color(0xFFFF8C61)
+val Secondary = Color(0xFF2EC4B6)
+val SecondaryDark = Color(0xFF25A99D)
+val Accent = Color(0xFFFFD166)
+val Background = Color(0xFFF7F7F7)
+val BackgroundDark = Color(0xFF1A1A2E)
+val Surface = Color(0xFFFFFFFF)
+val SurfaceDark = Color(0xFF16213E)
+val Error = Color(0xFFE71D36)
+val Success = Color(0xFF06D6A0)
+val Warning = Color(0xFFFFD166)
+val OnPrimary = Color(0xFFFFFFFF)
+val OnSecondary = Color(0xFFFFFFFF)
+val OnBackground = Color(0xFF1A1A2E)
+val OnBackgroundDark = Color(0xFFF7F7F7)
+val OnSurface = Color(0xFF1A1A2E)
+val OnSurfaceDark = Color(0xFFF7F7F7)
+val TextSecondary = Color(0xFF6B7280)
+val TextDisabled = Color(0xFF9CA3AF)
+val Divider = Color(0xFFE5E7EB)
+val MonkeyBrown = Color(0xFF8B4513)
+val MonkeyLight = Color(0xFFD2691E)

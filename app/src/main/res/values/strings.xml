@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">Scroll Tax</string>
+    <string name="app_tagline">Catch impulse opens, break doomscrolling</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_welcome_title">Break the Scroll Loop</string>
+    <string name="onboarding_welcome_desc">Scroll Tax helps you catch impulse opens, repeated social app checks, and late-night doomscrolling with lightweight nudges and a playful monkey.</string>
+    <string name="onboarding_permission_title">We Need Usage Access</string>
+    <string name="onboarding_permission_desc">To detect when you open apps and help you stay mindful, we need access to your app usage statistics. We never read your messages, content, or personal data.</string>
+    <string name="onboarding_app_select_title">Choose Apps to Track</string>
+    <string name="onboarding_app_select_desc">Select the apps that tend to trap you in endless scrolling. We will watch for impulse opens and repeated checks.</string>
+    <string name="onboarding_sensitivity_title">Set Your Sensitivity</string>
+    <string name="onboarding_sensitivity_desc">How strict should we be? Higher sensitivity means more frequent interventions.</string>
+    <string name="onboarding_monkey_title">Meet Your Monkey</string>
+    <string name="onboarding_monkey_desc">Choose your monkey personality. They will appear when you are stuck in a scroll loop.</string>
+    <string name="onboarding_success_title">You are All Set!</string>
+    <string name="onboarding_success_desc">Your monkey is ready to help. Expect some interventions today as you learn your patterns. You can always adjust settings later.</string>
+
+    <!-- Monkey Tones -->
+    <string name="monkey_tone_funny">Funny - Playful and gentle reminders</string>
+    <string name="monkey_tone_balanced">Balanced - Direct but kind</string>
+    <string name="monkey_tone_savage">Savage - Brutal honesty, no mercy</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_title">Today</string>
+    <string name="impulse_opens">Impulse Opens</string>
+    <string name="trap_apps">Trap Apps</string>
+    <string name="monkey_interventions">Monkey Interventions</string>
+    <string name="saved_minutes">Saved Minutes</string>
+    <string name="night_scroll">Night Scroll Report</string>
+    <string name="pause_nudges">Pause Nudges for 1 Hour</string>
+    <string name="nudges_paused">Nudges paused until %s</string>
+
+    <!-- Interventions -->
+    <string name="chip_small">Impulse open detected</string>
+    <string name="chip_strong">You just opened this again</string>
+    <string name="intent_card_title">Still scrolling?</string>
+    <string name="intent_card_desc">You have been here %d minutes. Was this intentional?</string>
+    <string name="intent_card_continue">Continue</string>
+    <string name="intent_card_exit">Exit App</string>
+    <string name="monkey_bubble_funny">Hey! Did you mean to open this?</string>
+    <string name="monkey_bubble_balanced">You have opened this %d times today. Intentional?</string>
+    <string name="monkey_bubble_savage">STOP. Put the phone down. Now.</string>
+    <string name="exit_success">Great! You chose mindfulness.</string>
+    <string name="exit_success_saved">You saved %d minutes!</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_track_apps">Track Apps</string>
+    <string name="settings_excluded_apps">Excluded Apps</string>
+    <string name="settings_bedtime">Bedtime Hours</string>
+    <string name="settings_monkey">Monkey Interventions</string>
+    <string name="settings_motion">Motion Intensity</string>
+    <string name="settings_strictness">Strictness Level</string>
+    <string name="settings_silent">Silent Mode</string>
+    <string name="settings_weekly_report">Weekly Report</string>
+    <string name="settings_data_export">Export Data</string>
+    <string name="settings_delete_data">Delete All Data</string>
+    <string name="settings_privacy">Privacy Policy</string>
+
+    <!-- Privacy -->
+    <string name="privacy_title">Your Privacy Matters</string>
+    <string name="privacy_on_device">All data stays on your device. We never upload your usage patterns.</string>
+    <string name="privacy_no_content">We never read your messages, photos, or any app content.</string>
+    <string name="privacy_no_selling">We never sell or share your behavior data.</string>
+    <string name="privacy_delete">You can delete all data anytime from settings.</string>
+
+    <!-- Sensitivity Levels -->
+    <string name="sensitivity_low">Low - Minimal interventions</string>
+    <string name="sensitivity_medium">Medium - Balanced approach</string>
+    <string name="sensitivity_high">High - Aggressive nudges</string>
+
+    <!-- Misc -->
+    <string name="grant_permission">Grant Permission</string>
+    <string name="next">Next</string>
+    <string name="back">Back</string>
+    <string name="get_started">Get Started</string>
+    <string name="done">Done</string>
+    <string name="skip">Skip</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="warning">Warning</string>
+    <string name="delete_confirm">Are you sure? This will permanently delete all your data.</string>
+</resources>

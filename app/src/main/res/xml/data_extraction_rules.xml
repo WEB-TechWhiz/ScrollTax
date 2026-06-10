@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <cloud-backup>
+        <exclude domain="sharedpref" path="scrolltax_prefs.xml"/>
+        <exclude domain="database" path="scrolltax_database"/>
+        <exclude domain="file" path="scrolltax_data/"/>
+    </cloud-backup>
+    <device-transfer>
+        <exclude domain="sharedpref" path="scrolltax_prefs.xml"/>
+        <exclude domain="database" path="scrolltax_database"/>
+    </device-transfer>
+</data-extraction-rules>
