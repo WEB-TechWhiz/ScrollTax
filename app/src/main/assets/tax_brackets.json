@@ -1,0 +1,5 @@
+[
+  {"lower": 0, "upper": 10000, "rate": 0.05},
+  {"lower": 10000, "upper": 50000, "rate": 0.15},
+  {"lower": 50000, "upper": null, "rate": 0.25}
+]

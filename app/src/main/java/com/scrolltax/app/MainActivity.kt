@@ -19,6 +19,7 @@ import com.scrolltax.app.ui.dashboard.DashboardScreen
 import com.scrolltax.app.ui.onboarding.OnboardingScreen
 import com.scrolltax.app.ui.settings.SettingsScreen
 import com.scrolltax.app.ui.theme.ScrollTaxTheme
+import com.scrolltax.domain.CalculateProgressiveTaxUseCase
 import com.scrolltax.data.repository.AppUsageRepository
 import com.scrolltax.tracking.AppTrackingService
 import dagger.hilt.android.AndroidEntryPoint
@@ -29,6 +30,8 @@ class MainActivity : ComponentActivity() {
 
     @Inject
     lateinit var appUsageRepository: AppUsageRepository
+    @Inject
+    lateinit var calculateProgressiveTaxUseCase: CalculateProgressiveTaxUseCase
 
     private val notificationPermissionLauncher = registerForActivityResult(
         ActivityResultContracts.RequestPermission()
@@ -68,9 +71,8 @@ class MainActivity : ComponentActivity() {
                         }
                         composable("settings") {
                             SettingsScreen(
-                                onNavigateBack = {
-                                    navController.popBackStack()
-                                }
+                                onNavigateBack = { navController.popBackStack() },
+                                onNavigateToTaxBracket = { navController.navigate("tax_brackets") }
                             )
                         }
                     }

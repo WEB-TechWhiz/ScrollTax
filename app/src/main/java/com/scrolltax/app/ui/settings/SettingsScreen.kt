@@ -80,6 +80,8 @@ import java.time.format.DateTimeFormatter
 @Composable
 fun SettingsScreen(
     onNavigateBack: () -> Unit,
+    onNavigateToTaxBracket: () -> Unit,
+    onNavigateToAppSelection: () -> Unit,
     viewModel: SettingsViewModel = hiltViewModel()
 ) {
     val settings by viewModel.settings.collectAsState()
@@ -131,6 +133,12 @@ fun SettingsScreen(
                     )
 
                     SettingsDivider()
+                SettingsItem(
+                    icon = Icons.Default.Straighten,
+                    title = "Tax Brackets",
+                    subtitle = "Calculate tax by brackets",
+                    onClick = onNavigateToTaxBracket
+                )
 
                     SettingsItem(
                         icon = Icons.Default.VisibilityOff,

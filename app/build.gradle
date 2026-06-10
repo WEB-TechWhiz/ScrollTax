@@ -23,11 +23,21 @@ android {
         }
     }
 
+    signingConfigs {
+        release {
+            storeFile file("release.keystore")
+            storePassword "password"
+            keyAlias "scrolltax"
+            keyPassword "password"
+        }
+    }
+
     buildTypes {
         release {
             minifyEnabled true
             shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
         }
         debug {
             minifyEnabled false

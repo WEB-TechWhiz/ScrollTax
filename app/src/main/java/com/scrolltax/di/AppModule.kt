@@ -15,6 +15,7 @@ import com.scrolltax.data.repository.AppUsageRepository
 import com.scrolltax.data.repository.InterventionRepository
 import com.scrolltax.data.repository.SettingsRepository
 import com.scrolltax.data.repository.TrackingRepository
+import com.scrolltax.data.repository.TaxBracketRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -106,5 +107,11 @@ object AppModule {
         @ApplicationContext context: Context
     ): AppUsageRepository {
         return AppUsageRepository(context)
+
+    @Provides
+    @Singleton
+    fun provideTaxBracketRepository(@ApplicationContext context: Context): TaxBracketRepository {
+        return TaxBracketRepository(context)
+    }
     }
 }
