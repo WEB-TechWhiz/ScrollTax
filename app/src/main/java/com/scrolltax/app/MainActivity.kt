@@ -20,6 +20,7 @@ import com.scrolltax.app.ui.onboarding.OnboardingScreen
 import com.scrolltax.app.ui.settings.SettingsScreen
 import com.scrolltax.app.ui.theme.ScrollTaxTheme
 import com.scrolltax.domain.CalculateProgressiveTaxUseCase
+import com.scrolltax.app.ui.tax.TaxBracketScreen
 import com.scrolltax.data.repository.AppUsageRepository
 import com.scrolltax.tracking.AppTrackingService
 import dagger.hilt.android.AndroidEntryPoint
@@ -73,6 +74,12 @@ class MainActivity : ComponentActivity() {
                             SettingsScreen(
                                 onNavigateBack = { navController.popBackStack() },
                                 onNavigateToTaxBracket = { navController.navigate("tax_brackets") }
+                            )
+                        }
+                        composable("tax_brackets") {
+                            TaxBracketScreen(
+                                calculateProgressiveTaxUseCase = calculateProgressiveTaxUseCase,
+                                onBack = { navController.popBackStack() }
                             )
                         }
                     }

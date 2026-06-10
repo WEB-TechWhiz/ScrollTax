@@ -12,9 +12,14 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.lifecycle.viewmodel.compose.viewModel
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.ArrowBack
 import com.scrolltax.domain.CalculateProgressiveTaxUseCase
 import com.scrolltax.app.ui.theme.Primary
 import com.scrolltax.app.ui.theme.Surface
+import kotlinx.coroutines.launch
+import androidx.compose.runtime.rememberCoroutineScope
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -33,7 +38,7 @@ fun TaxBracketScreen(
                 navigationIcon = {
                     IconButton(onClick = onBack) {
                         Icon(
-                            imageVector = Icons.AutoMirrored.Filled.ArrowBack,
+                            imageVector = Icons.Filled.ArrowBack,
                             contentDescription = "Back"
                         )
                     }
@@ -79,7 +84,10 @@ fun TaxBracketScreen(
                         taxResult = null
                     } else {
                         errorMessage = null
-                        taxResult = calculateProgressiveTaxUseCase.calculate(income)
+                        val scope = rememberCoroutineScope()
+                        scope.launch {
+                            taxResult = calculateProgressiveTaxUseCase.invoke(income.toLong())
+                        }
                     }
                 },
                 shape = RoundedCornerShape(12.dp),
