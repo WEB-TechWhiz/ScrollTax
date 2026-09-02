@@ -1,56 +1,111 @@
-# Gradle
-.gradle/
-**/build/
-!gradle/wrapper/gradle-wrapper.jar
-
-# Android Studio / IntelliJ
-.idea/
-*.iml
-*.iws
-*.ipr
-out/
-
-# Android generated files
-local.properties
-captures/
-.externalNativeBuild/
-.cxx/
-
-# Signing and secrets
-*.jks
-*.keystore
-*.p12
-*.pem
-keystore.properties
-secrets.properties
-
-# Build artifacts
-*.apk
-*.ap_
-*.aab
-*.aar
-*.dex
-*.class
-
-# Test and coverage output
-*.log
-test-results/
-coverage/
-*.ec
-*.exec
-
-# Project-generated archives/reports
-audit_report/
-gradle-*-extract/
-*.zip
-
-# OS files
+# =========================================================================
+# Operating System & IDE Artifacts
+# =========================================================================
+# macOS
 .DS_Store
-Thumbs.db
-desktop.ini
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
 
-# Temporary files
-*.tmp
-*.temp
-*.swp
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# Linux
 *~
+.directory
+
+# IDEs & Editors
+.idea/
+*.sublime-workspace
+*.sublime-project
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.suo
+*.ntvs*
+*.njsproj
+*.swp
+*.swo
+
+# =========================================================================
+# Environment Variables & Secrets
+# =========================================================================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.local
+*.env.*
+!.env.example
+!.env.sample
+!.env.template
+
+# Private Keys & Certificates
+*.pem
+*.key
+*.cert
+*.crt
+*.pfx
+*.p12
+credentials.json
+token.json
+serviceAccountKey.json
+
+# =========================================================================
+# Node.js, Dependencies & Build Artifacts
+# =========================================================================
+# Dependencies
+node_modules/
+jspm_packages/
+web_modules/
+.pnp
+.pnp.js
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+pnpm-debug.log*
+
+# Build Outputs
+dist/
+dist-ssr/
+build/
+out/
+.next/
+.nuxt/
+.vuepress/dist/
+.serverless/
+.fusebox/
+.dynamodb/
+.tern-port
+
+# Caches
+.cache/
+.parcel-cache/
+.turbo/
+.eslintcache
+.stylelintcache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+.tsbuildinfo
+
+# Testing & Coverage
+coverage/
+.nyc_output/
+cypress/videos/
+cypress/screenshots/
